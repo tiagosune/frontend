@@ -1,0 +1,149 @@
+@import 'tabelas.css';
+
+
+html {
+	font-family: sans-serif;
+	color: #333333;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+/* Combinadores: 
+	Filha >
+	Irmã + (adjacente(do mesmo pai)) - tem q vir logo abaixo do outro elemento
+	Irmã ~ (geral) nao precisa estar logo abaixo, mas tem q estar abaixo da referencia
+	Pseudo-classes :
+ */
+
+header h2 {
+	font-weight: 100;  /* aplica em qualquer h2 dentro do header mesmo que esteja dentro de outra tag. ex: <div> */
+}
+
+header > h2 {
+	font-weight: 600; /* aplica somente no h2 dentro do header, nao pode estar dentro de outra tag */
+}
+
+h2 + p {
+	background: #ff0;
+	color: #333;
+}
+
+h2 ~ h5 {
+	font-size: 1.5rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+header h5 + p {
+	font-family: sans-serif;
+	font-size: 1.3rem;
+}
+
+/* Pseudo-classes / Pseudo-elementos */
+
+a {
+	color: #555555;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+a:visited {
+	color: #f00;
+}
+
+a:active {
+	color: #096;
+}
+
+a:hover {
+	color: #009;
+
+}
+
+h2:hover {
+	color: #888;
+	cursor: default;
+}
+
+
+/* Tipografia */
+
+html {
+	font-family: Times New Roman;
+}
+
+h1, h2, h5 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+li{
+	letter-spacing: 0.1rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h3 {
+	font: bold 1.5rem sans-serif;
+}
+
+/* CORES */
+
+body {
+	background: url(../images/pattern.png) center top repeat #EEE; /* center top no-repeat #000000 sao configuraçoes da imagem e a cor do fundo caso nao carregue a imagem */
+}
+
+section {
+	background: rgba(255, 255, 255, 0.85);
+}
+
+p {
+	color: #034589;
+}
+
+header, footer {
+	background-color: #034589;
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+	font-family: sans-serif;
+}
+
+.navegacao {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: .5rem;
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.navegacao li:hover {
+	background-color: rgba(150, 150, 200, .5);
+	color: #333333;
+}
+
+body {
+	height: 100vh;
+	overflow: overlay;
+}
+
+.tabelas {
+	width: 100%;
+}
