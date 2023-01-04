@@ -51,7 +51,7 @@ são ramificações / versões paralelas
 
 ### Merge
 Mescla de branchs
-Você pode precisar resolver conflitos manualmente
+Pode ser necessario resolver conflitos manualmente
 
 > git merge main 
 
