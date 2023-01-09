@@ -150,10 +150,12 @@ footer small{
     section nav,
     section article {
         width: 100%;
-    }  
-}
-
-.container{
+    }
+    
+    .container{
     padding-left: 1%;
     padding-right: 1%;
 }
+}
+
+
