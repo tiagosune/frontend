@@ -65,6 +65,11 @@ p{
     color: #333;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 ol{
     margin-left: 30px;
     padding-bottom: 20px;
@@ -123,7 +128,31 @@ footer small{
     display: block;
 }
 
+#tenho-interesse{
+    background-color: #aec0cc !important;
+    width: 100%;
+}
+
+#tenho-interesse form,
+.cognito.c-med .c-forms-form,
+.cognito.c-med .c-forms-form div,
+.cog-form__content {
+    background-color: #aec0cc !important;
+}
+
 .cognito{
     height: 400px !important;
     overflow: hidden !important;
+}
+
+@media (max-width: 425px){
+    section nav,
+    section article {
+        width: 100%;
+    }  
+}
+
+.container{
+    padding-left: 1%;
+    padding-right: 1%;
 }
