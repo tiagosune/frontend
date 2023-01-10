@@ -26,6 +26,7 @@ function aprovacao(notas){
 document.addEventListener('submit', function(evento){
 
     evento.preventDefault();
+    evento.stopPropagation();
 
     let formulario = document.getElementById('formulario01');
 
