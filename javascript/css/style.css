@@ -1,16 +1,32 @@
 html{
     font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+h2{
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+}
+
+.message,
+#resultados{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1.8rem;
 }
 
 form{
     display: block;
     background-color: rgb(188, 199, 209);
     width: 50%;
-    margin: 60px auto;
+    margin: 30px auto;
     padding: 20px;
 }
 
@@ -34,8 +50,13 @@ button{
     width: 12rem;
     padding: 1rem 1rem;
     cursor: pointer;
+    margin-bottom: 0;
 }
 
 button:hover{
     background-color: rgb(9, 71, 151);
+}
+
+.erro{
+    border-color: #f00;
 }
