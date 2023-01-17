@@ -1,0 +1,41 @@
+html{
+    font-size: 62.5%;
+}
+
+.container{
+
+}
+
+form{
+    display: block;
+    background-color: rgb(188, 199, 209);
+    width: 50%;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+input, button{
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input{
+    width: 80%;
+    padding: 1rem 2rem;
+}
+
+button{
+    border: 0 none;
+    border-radius: 2rem;
+    background-color: rgb(43, 113, 243);
+    color: aliceblue;
+    width: 12rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(9, 71, 151);
+}
