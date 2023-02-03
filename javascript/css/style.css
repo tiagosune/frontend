@@ -14,6 +14,7 @@ h2{
 }
 
 .message,
+.message_2,
 #resultados{
     display: block;
     width: 100%;
@@ -22,12 +23,20 @@ h2{
     font-size: 1.8rem;
 }
 
+.message_2{
+    margin-bottom: 0;
+}
+
 form{
     display: block;
     background-color: rgb(188, 199, 209);
     width: 50%;
     margin: 30px auto;
     padding: 20px;
+}
+
+#formulario01{
+    margin-bottom: 50px;
 }
 
 input, button{

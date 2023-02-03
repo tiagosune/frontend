@@ -67,6 +67,8 @@ document.getElementById('formulario02').addEventListener('submit', function(even
 
 let campoObrigatorio = document.querySelectorAll('input.obrigatorio');
 let campoCep = document.querySelectorAll('input.obrigatorio-cep');
+let campoEmail = document.querySelectorAll('input.obrigatorio-email');
+let campoUf = document.querySelectorAll('input.obrigatorio-uf');
 
 
 function validaCampo(elemento){
@@ -77,12 +79,12 @@ function validaCampo(elemento){
         event.preventDefault();
         
         if(this.value == '' || this.value < 0 || this.value > 10){
-            document.querySelector('.message').innerHTML = erro;
+            document.querySelector('.message_2').innerHTML = erro;
             this.classList.add('erro');
             this.parentNode.classList.add('error');
             return false;
         }else{
-            document.querySelector('.message').innerHTML = '';
+            document.querySelector('.message_2').innerHTML = '';
             this.classList.remove('erro');
             this.parentNode.classList.remove('error');
         }
@@ -100,11 +102,59 @@ function validaCampoCep(elemento){
         let number = this.value.match(/^[\d]{5}-*[\d]{3}/) ? this.value.replace(/-/, '') : this.value;
         
         if(number != '' && number.match(/[0-9]*/) && number.length == 8){
-            document.querySelector('.message').innerHTML = '';
+            document.querySelector('.message_2').innerHTML = '';
             this.classList.remove('erro');
             this.parentNode.classList.remove('error')
         } else{
-            document.querySelector('.message').innerHTML = erro;
+            document.querySelector('.message_2').innerHTML = erro;
+            this.classList.add('erro');
+            this.parentNode.classList.add('error');
+            return false;
+        }
+        
+    })
+    
+}
+function validaCampoEmail(elemento){
+    
+    elemento.addEventListener('focusout', function(event){
+        
+        event.preventDefault();
+        
+        let erro = 'Digite um e-mail válido.'
+        let email = this.value.match(/\S+@\S+\.\S+/);
+        
+        if(email){
+            document.querySelector('.message_2').innerHTML = '';
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('error')
+        } else{
+            document.querySelector('.message_2').innerHTML = erro;
+            this.classList.add('erro');
+            this.parentNode.classList.add('error');
+            return false;
+        }
+        
+    })
+    
+}
+function validaCampoUf(elemento){
+    
+    elemento.addEventListener('focusout', function(event){
+        
+        event.preventDefault();
+        
+        let erro = 'Digite uma sigla válida.'
+        let siglas = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA',
+                      'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
+
+        
+        if(siglas.includes(this.value)){
+            document.querySelector('.message_2').innerHTML = '';
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('error')
+        } else{
+            document.querySelector('.message_2').innerHTML = erro;
             this.classList.add('erro');
             this.parentNode.classList.add('error');
             return false;
@@ -119,5 +169,11 @@ for(let emFoco of campoObrigatorio){
     validaCampo(emFoco);
 }
 for(let emFoco of campoCep){
-    validaCampoCep(emFoco)
+    validaCampoCep(emFoco);
+}
+for(let emFoco of campoEmail){
+    validaCampoEmail(emFoco);
+}
+for(let emFoco of campoUf){
+    validaCampoUf(emFoco);
 }
