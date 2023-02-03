@@ -62,7 +62,6 @@ document.getElementById('formulario02').addEventListener('submit', function(even
     }
 
     console.log(info);
-
 })
 
 let campoObrigatorio = document.querySelectorAll('input.obrigatorio');
