@@ -51,8 +51,6 @@ textarea{
     text-align: center;
 }
 
-.input-group,
-#button-contato{
+.input-group{
     width: 100%;
-    margin-left: 50%;
 }
