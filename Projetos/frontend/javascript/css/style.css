@@ -1,0 +1,71 @@
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+}
+
+.message,
+.message_2,
+#resultados{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.message_2{
+    margin-bottom: 0;
+}
+
+form{
+    display: block;
+    background-color: rgb(188, 199, 209);
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+#formulario01{
+    margin-bottom: 50px;
+}
+
+input, button{
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input{
+    width: 80%;
+    padding: 1rem 2rem;
+}
+
+button{
+    border: 0 none;
+    border-radius: 2rem;
+    background-color: rgb(43, 113, 243);
+    color: aliceblue;
+    width: 12rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+button:hover{
+    background-color: rgb(9, 71, 151);
+}
+
+.erro{
+    border-color: #f00;
+}
