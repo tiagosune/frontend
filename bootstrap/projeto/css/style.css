@@ -4,8 +4,13 @@ header{
     /* background: rgb(212,13,13);
     background: linear-gradient(142deg, rgba(212,13,13,1) 0%, rgba(91,30,30,1) 43%, rgba(255,0,0,1) 100%);
     color: aliceblue; */
-    background-color: red;
+    background-color: #E63946;
     color: aliceblue;
+    height: 90px;
+}
+
+#incopel_title{
+    font-size: 1.8rem;
 }
 
 body{
@@ -14,8 +19,7 @@ body{
 
 .nav-link{
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    margin-top: 6px;
+    font-weight: 900;
     color: aliceblue;
 }
 .nav-link:hover{
@@ -49,8 +53,63 @@ textarea{
 }
 #contato{
     text-align: center;
+    justify-content: center;
+}
+
+#contato .row{
+    justify-content: center;
 }
 
 .input-group{
     width: 100%;
 }
+
+.logo {
+    height: 70px;       /* controla o tamanho */
+    width: auto;
+    border-radius: 50%;
+}
+
+#carouselExampleIndicators {
+    max-width: 50%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+#carouselExampleIndicators img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    padding: 1px;
+    border-radius: 10px; /* Opcional: cantos arredondados */
+}
+
+
+/* MENU MOBILE */
+@media (max-width: 767px) {
+
+    #menu {
+        background-color: #c40000;
+        margin-top: 12px;
+        border-radius: 10px;
+        padding: 0.5rem 0;
+    }
+
+    #menu .nav-link {
+        padding: 1rem;
+        font-size: 1.1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.25);
+    }
+
+    #menu .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    #menu .nav-link:hover {
+        background-color: #a00000;
+    }
+}
+
