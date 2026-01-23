@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,37 +9,112 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Incopel - Brita e Areia</title>
 </head>
+
 <body>
 
-    <header>
+    <header class="bg-danger">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Incopel</h1>
-                </div>
-                <div class="col">
-                    <ul class="nav navbar-default justify-content-end">
-                        <li class="nav-item"><a href="#topo" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#pedra" class="nav-link">Pedras</a></li>
-                        <li class="nav-item"><a href="#quem-somos" class="nav-link">Quem somos</a></li>
-                        <li class="nav-item"><a href="#contato" class="nav-link">Fale conosco</a></li>
+            <nav class="navbar navbar-expand-md navbar-dark">
+
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./images/incopel_logo.jpg" alt="Logo Incopel" class="logo">
+                    <span class="ms-3 fw-bold" id="incopel_title">Incopel</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav ms-auto text-center text-md-start">
+                        <li class="nav-item"><a class="nav-link" href="#topo">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#quem-somos">Quem somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pedra">Pedras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Fale conosco</a></li>
                     </ul>
                 </div>
-            </div>
+
+            </nav>
         </div>
     </header>
-    
+
+
+
     <section id="quem-somos">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <h1>Sobre a Incopel</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem assumenda voluptatem illum officia ea repellendus, quibusdam vitae dolor fugiat ad cum omnis iusto, odio dignissimos, sequi aliquam! Vitae, error.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem assumenda voluptatem illum officia ea repellendus, quibusdam vitae dolor fugiat ad cum omnis iusto, odio dignissimos, sequi aliquam! Vitae, error.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem assumenda
+                        voluptatem illum officia ea repellendus, quibusdam vitae dolor fugiat ad cum omnis iusto, odio
+                        dignissimos, sequi aliquam! Vitae, error.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem assumenda
+                        voluptatem illum officia ea repellendus, quibusdam vitae dolor fugiat ad cum omnis iusto, odio
+                        dignissimos, sequi aliquam! Vitae, error.</p>
                     <a class="btn btn-lg btn-outline-danger">Conheça mais sobre nós</a>
                 </div>
-                <div class="col-md-5 col-sm-12">
-                    <img src="./images/mina.jpg" alt="Foto de uma mina de pedras" class="img-fluid">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./images/sede_incopel.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Sede administrativa da Incopel</h5>
+                                <p>Localizada no município de Estância Velha, as margens da BR-116.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/projeo_ambiental.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Projeto Ambiental "No Lugar da Pedra"</h5>
+                                <p>O objetivo é mantermos diariamente nossa responsabilidade com a natureza, pois mesmo
+                                    com nossas extrações, o ciclo natural se mantém através do nosso cultivo de sementes
+                                    nativas.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/esteiras_incopel.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Referência no mercado!</h5><br>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/caminhoes_incopel.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Você sabia que a Incopel produz Britas para o mercado há mais de 50 anos?</h5>
+                                <p>Por isso, conte com a gente para contribuir para o seu projeto com a máxima qualidade e experiência.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/brita.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Sede administrativa da Incopel</h5>
+                                <p>Localizada no município de Estância Velha, as margens da BR-116.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/maquina_incopel.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Estamos sempre em busca dos melhores maquinários.</h5>
+                                <p>Hoje foi dia de receber nossa nova Escavadeira Volvo EC250.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -55,7 +131,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Pedra 01</h5>
                         </div>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia maxime dolores officia explicabo, laboriosam at ducimus doloribus!</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia maxime
+                            dolores officia explicabo, laboriosam at ducimus doloribus!</p>
                         <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal01">Saiba mais</a>
                     </div>
                     <div class="card">
@@ -63,7 +140,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Pedra 02</h5>
                         </div>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia maxime dolores officia explicabo, laboriosam at ducimus doloribus!</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia maxime
+                            dolores officia explicabo, laboriosam at ducimus doloribus!</p>
                         <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal02">Saiba mais</a>
                     </div>
                     <div class="card">
@@ -71,7 +149,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Pedra 03</h5>
                         </div>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia maxime dolores officia explicabo, laboriosam at ducimus doloribus!</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia maxime
+                            dolores officia explicabo, laboriosam at ducimus doloribus!</p>
                         <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal03">Saiba mais</a>
                     </div>
 
@@ -85,7 +164,8 @@
             <div class="row">
                 <div class="col-md-12 colsm-12">
                     <h1>Contato</h1>
-                    <p>Ficou interessado? Preencha os campos abaixo que entraremos em contato para fazer um orçamento.</p>
+                    <p>Ficou interessado? Preencha os campos abaixo que entraremos em contato para fazer um orçamento.
+                    </p>
                 </div>
                 <div class="col-md-6 colsm-12">
 
@@ -100,12 +180,13 @@
                         </div>
 
                         <div class="input-group">
-                            <textarea name=""  rows="7" class="form-control"></textarea>
+                            <textarea name="" rows="7" class="form-control"></textarea>
                         </div>
 
                     </form>
 
-                    <button id="button-contato" type="submit" class="btn btn-lg btn-success">Solicitar orçamento</button>
+                    <button id="button-contato" type="submit" class="btn btn-lg btn-success">Solicitar
+                        orçamento</button>
 
                 </div>
             </div>
@@ -231,8 +312,9 @@
             </div>
         </div>
     </div>
-        
+
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-  </body>
 </body>
+</body>
+
 </html>
